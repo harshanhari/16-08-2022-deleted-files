@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>My profile</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/homestyle.css">
+<style>
+body, h1, h2, h3, h4, h5, h6 {
+	font-family: "Lato", sans-serif
+}
+
+.w3-bar, h1, button {
+	font-family: "Montserrat", sans-serif
+}
+
+.fa-anchor, .fa-coffee {
+	font-size: 200px
+}
+
+.button {
+	background-color: #53CACE;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	margin: 4px 2px;
+}
+
+.name-field {
+	background-color: #f44336;
+	border-bottom: 5px solid red;
+	border-right: 5px solid red;
+	border-left: 5px solid #B1FCF7;
+	border-top: 5px solid #B1FCF7;
+}
+</style>
+</head>
+<body>
+	<div class=container>
+		<div class="w3-top">
+			<div class="w3-bar w3-red w3-card w3-left-align w3-large">
+
+				<a
+					class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+					href="javascript:void(0);" onclick="myFunction()"
+					title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a> <a
+					href="userhome.html"
+					class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+				<a href="myprofile.html"
+					class="w3-bar-item w3-button w3-padding-large w3-white">My
+					Profile</a> <a href=""
+					class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Buy
+					Puppies</a> <a href="sellpuppies.html"
+					class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Sell
+					Puppies</a><a href=""
+					class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Selling
+					Status</a><a href="aboutus.html"
+					class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About</a><a
+					href="contact.html"
+					class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a><a
+					href="addfeedback.html"
+					class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Feedback</a><a
+					href="login.html"
+					class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Sign
+					out</a>
+			</div>
+
+		</div>
+		<header class="w3-container w3-center"
+			style="padding: 128px 16px; color: black; height: 1000px; background: linear-gradient(to bottom, #B1FCF7 0%, black 100%);">
+
+			<div class="col-md-4 mb-3"
+				style="border: solid #00B8AC; width: 500px; margin-left: auto; margin-right: auto; border-bottom: 5px solid red; border-right: 5px solid red; border-left: 5px solid #B1FCF7; border-top: 5px solid #B1FCF7; background: linear-gradient(to bottom, #f44336 0%, #B1FCF7 100%);">
+				<div class="card">
+					<div class="card-body">
+						<div class="d-flex flex-column align-items-center text-center">
+							<img src="./images/profilepic.png" alt="User"
+								style="width: 150px; padding-top: 20px; height: 150px;">
+						</div>
+						<input type="file"
+							style="margin-left: 100px; margin-top: 20px; background-size: 15px;">
+					</div>
+
+				</div>
+				<div class="col-md-8">
+					<div class="card mb-3">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-sm-3">
+									<h4 class="mb-0">
+										<b>NAME</b>
+									</h4>
+								</div>
+								<div class="col-sm-9 text-secondary">
+									<input type="text" value="Harshan Hari"
+										placeholder="Enter youe name"
+										style="background-color: transparent; text-align: center;"
+										id="name" required="required" class="name-field">
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-sm-3">
+									<h4 class="mb-0">
+										<b>Age</b>
+									</h4>
+								</div>
+								<div class="col-sm-9 text-secondary">
+									<center>
+										<input type="date" id="age" value="2001-03-07"
+											placeholder="Enter your age"
+											style="background-color: transparent; text-align: center;"
+											required="required" class="name-field">
+									</center>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-sm-3">
+									<h4 class="mb-0">
+										<b>Address</b>
+									</h4>
+								</div>
+								<div class="col-sm-9 text-secondary">
+									<input type="text" value="Indeevaram, Aasramam Ward, Alappuzha"
+										size="50" id="address" placeholder="Enter your address"
+										style="background-color: transparent; text-align: center;"
+										required="required" class="name-field">
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-sm-3">
+									<h4 class="mb-0">
+										<b>Phone</b>
+									</h4>
+								</div>
+								<div class="col-sm-9 text-secondary">
+									<input type="tel" id="phone" value="+91 7994962059"
+										placeholder="Enter your phone number"
+										style="width: 200px; background-color: transparent; text-align: center;"
+										required="required" class="name-field">
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-sm-3">
+									<h4 class="mb-0">
+										<b>Email</b>
+									</h4>
+								</div>
+								<div class="col-sm-9 text-secondary">
+									<input type="email" size="50" id="email"
+										placeholder="Enter your email"
+										style="background-color: transparent; text-align: center;"
+										value="harshanharijithu@gmail.com" required="required"
+										class="name-field">
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-sm-12">
+									<form action="userhome.html" method="">
+										<input class="button" type="submit" value="Save Changes"
+											id="edit"
+											style="margin: 5px; color: black; border-color: #00B8AC; background-color: #00D9CB; background-size: 15px;">
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</header>
+	</div>
+</body>
+</html>

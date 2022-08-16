@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sell Puppies</title>
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="./css/homestyle.css">
+
+<style>
+.data {
+	padding-left: 32px;
+	font-weight: bold;
+	font-family: "Montserrat", sans-serif
+}
+
+.box {
+	border-bottom: 5px solid red;
+	border-right: 5px solid red;
+	border-left: 5px solid #B1FCF7;
+	border-top: 5px solid #B1FCF7;
+	margin: auto;
+	width: 50%;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+	font-family: "Lato", sans-serif
+}
+
+.w3-bar, h1, button {
+	font-family: "Montserrat", sans-serif
+}
+
+.fa-anchor, .fa-coffee {
+	font-size: 200px
+}
+
+body {
+	font: 1em Helvetica;
+}
+
+/* .whysign {
+	background-color: white;
+	border-radius: 0 5px 5px 0;
+	padding-top: 20px;
+	padding-right: 20px;
+} */
+.signup {
+	padding-top: 10px;
+	margin: auto;
+	width: 50%;
+	padding: 20px 20px;
+	background: linear-gradient(to bottom, #f44336 0%, #B1FCF7 100%);
+	border-radius: 5px 0 0 5px;
+}
+
+[type=text] {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	border: 0;
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
+	height: 45px;
+	line-height: 45px;
+	margin-bottom: 10px;
+	font-size: 1em;
+}
+
+[type=email] {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	border: 0;
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
+	height: 45px;
+	line-height: 45px;
+	margin-bottom: 10px;
+	font-size: 1em;
+}
+
+[type=password] {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	border: 0;
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
+	height: 45px;
+	line-height: 45px;
+	margin-bottom: 10px;
+	font-size: 1em;
+}
+
+[type=date] {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	border: 0;
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
+	height: 45px;
+	line-height: 45px;
+	margin-bottom: 10px;
+	font-size: 1em;
+}
+
+[type=submit] {
+	background-color: #53CACE;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	margin: 4px 2px;
+	border-radius: 5px;
+	border: none;
+}
+
+[type=reset] {
+	margin-top: 25px;
+	width: 80%;
+	border: 0;
+	background-color: #53CACE;
+	border-radius: 5px;
+	height: 50px;
+	color: white;
+	font-weight: 400;
+	font-size: 1em;
+}
+
+[type='text']:focus {
+	outline: none;
+	border-color: #53CACE;
+}
+
+[type='date']:focus {
+	outline: none;
+	border-color: #53CACE;
+}
+
+[type='email']:focus {
+	outline: none;
+	border-color: #53CACE;
+}
+
+[type='password']:focus {
+	outline: none;
+	border-color: #53CACE;
+}
+
+h1 {
+	color: rgba(0, 0, 0, .7);
+	font-weight: 900;
+	font-size: 2.5em;
+}
+
+p {
+	color: rgba(0, 0, 0, .6);
+	font-size: 1.2em;
+	margin: 50px 0 50px 0;
+}
+
+span {
+	font-size: .75em;
+	background-color: white;
+	padding: 2px 5px;
+	color: rgba(0, 0, 0, .6);
+	border-radius: 2px;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+	margin: 5px;
+}
+
+span:hover {
+	color: #53CACE;
+}
+
+p:nth-of-type(2) {
+	font-size: 1em;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+	font-family: "Lato", sans-serif
+}
+
+.w3-bar, h1, button {
+	font-family: "Montserrat", sans-serif
+}
+
+.fa-anchor, .fa-coffee {
+	font-size: 200px
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<!-- Navbar -->
+		<div class="w3-top">
+			<div class="w3-bar w3-red w3-card w3-left-align w3-large">
+
+				<a
+					class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+					href="javascript:void(0);" onclick="myFunction()"
+					title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a> <a
+					href="userhome.html"
+					class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+				<a href="myprofile.html"
+					class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">My
+					Profile</a> <a href=""
+					class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Buy
+					Puppies</a> <a href="sellpuppies.html"
+					class="w3-bar-item w3-button w3-padding-large w3-white">Sell
+					Puppies</a><a href=""
+					class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Selling
+					Status</a><a href="aboutus.html"
+					class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About</a><a
+					href="contact.html"
+					class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a><a
+					href="addfeedback.html"
+					class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Feedback</a><a
+					href="login.html"
+					class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Sign
+					out</a>
+			</div>
+
+		</div>
+		<!-- Header -->
+		<header class="w3-container"
+			style="padding: 128px 16px; height: 1500px; text-align: left; background: linear-gradient(to bottom, #B1FCF7 0%, black 100%);">
+
+
+			<div id='container'>
+				<div class='signup'
+					style="border: solid; border-bottom: 5px solid red; border-right: 5px solid red; border-left: 5px solid #B1FCF7; border-top: 5px solid #B1FCF7; padding-bottom: 20px; width: 400px;">
+					<form action="SellDogsServlet" method="post">
+						<label class="data">Select breed</label><br> <br> <select
+							name="breed" id="breed"
+							style="display: block; margin-left: 28px; width: 50%; border: 0; border-bottom: 1px solid rgba(0, 0, 0, .2); height: 25px; line-height: 25px; margin-bottom: 10px; font-size: 1em; color: rgba(0, 0, 0, .4);">
+							<option value="">Select your breed</option>
+							<option value="Beagle">Beagle</option>
+							<option value="Boxer">Boxer</option>
+							<option value="Dalmatian">Dalmatian</option>
+							<option value="English Cocker Spaniels">English Cocker Spaniels</option>
+							<option value="German Shepherd">German Shepherd</option>
+							<option value="Golden Retriever">Golden Retriever</option>
+							<option value="Great Danes">Great Danes</option>
+							<option value="Indian Spitz">Indian Spitz</option>
+							<option value="Labrador Retriever">Labrador Retriever</option>
+							<option value="Native Dog">Native Dog</option>
+							<option value="Pomeranian">Pomeranian</option>
+							<option value="Pug">Pug</option>
+							<option value="Rottweiler">Rottweiler</option>
+							<option value="Tibetan Mastiff">Tibetan Mastiff</option>
+						</select>
+						<hr>
+						<label class="data">Enter date of birth</label><br> <br>
+						<input type="date" id="dob" name="dob"
+							style="display: block; margin-left: 28px; width: 50%; border: 0; border-bottom: 1px solid rgba(0, 0, 0, .2); height: 25px; line-height: 25px; margin-bottom: 10px; font-size: 1em; color: rgba(0, 0, 0, .4);">
+						<hr>
+						<label class="data">Gender </label><br> <br> <input
+							type="radio" name="gender" value="male"
+							style="margin-left: 30px;"> Male <input type="radio"
+							name="gender" value="female"> Female
+						<hr>
+						<label class="data">Contact number</label><br> <br> <input
+							type="tel" id="number" name="number"
+							style="display: block; margin-left: 28px; width: 50%; border: 0; border-bottom: 1px solid rgba(0, 0, 0, .2); height: 25px; line-height: 25px; margin-bottom: 10px; font-size: 1em; color: rgba(0, 0, 0, .4);">
+						<hr>
+						<label class="data">Location</label><br> <br> <input
+							type="text" id="location" name="location"
+							style="display: block; margin-left: 28px; width: 50%; border: 0; border-bottom: 1px solid rgba(0, 0, 0, .2); height: 25px; line-height: 25px; margin-bottom: 10px; font-size: 1em; color: rgba(0, 0, 0, .4);">
+						<hr>
+						<label class="data">Set price</label><br> <br> <input
+							type="text" id="price" name="price"
+							style="display: block; margin-left: 28px; width: 50%; border: 0; border-bottom: 1px solid rgba(0, 0, 0, .2); height: 25px; line-height: 25px; margin-bottom: 10px; font-size: 1em; color: rgba(0, 0, 0, .4);">
+						<hr>
+						<label class="data">KCI registered </label><br> <br> <input
+							type="radio" name="kci" value="yes" style="margin-left: 30px;">
+						Yes <input type="radio" name="kci" value="no"> No
+						<hr>
+						<label class="data">Add a photo</label><br> <br>
+						<input type="file" name="photo"
+							style="display: block; margin-left: 28px; width: 60%; border: 0; border-bottom: 1px solid rgba(0, 0, 0, .2); height: 30px; line-height: 25px; margin-bottom: 10px; font-size: 1em;">
+						<hr>
+						<label class="data">Description</label><br> <br>
+						<textarea name="description"
+							placeholder="Please enter long unique discription"
+							style="display: block; height: 100px; margin-left: 28px; width: 80%; border: 0; border-bottom: 1px solid rgba(0, 0, 0, .2); line-height: 25px; margin-bottom: 10px; font-size: 1em; color: rgba(0, 0, 0, .4);"></textarea>
+						<hr>
+						<input type="submit" id="post" value="Post"
+							style="margin-left: 100px; color: black; border-color: #00B8AC; background-color: #00D9CB; background-size: 15px;">
+					</form>
+				</div>
+
+			</div>
+		</header>
+</body>
+</html>
